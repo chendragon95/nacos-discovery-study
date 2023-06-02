@@ -1,0 +1,16 @@
+server:
+  port: 8011
+
+spring:
+  application:
+    # 应用名, 会作为服务端注册中心的服务名
+    name: user-service
+  cloud:
+    nacos:
+      discovery:
+        # nacos服务端地址
+        server-addr: localhost:8848
+        # 命名空间 (不配置则使用默认命名空间public)
+        namespace: 013f54f2-582f-4921-a998-46fdabeb0542
+        # 分组 (不配置则使用默认的分组DEFAULT_GROUP)
+        group: STUDY_GROUP
